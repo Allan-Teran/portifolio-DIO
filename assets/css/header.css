@@ -13,5 +13,19 @@
 .header__title {
     font-family: 'Neue Machina', sans-serif;
     text-align: center;
+}
 
+.header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.header__info__item {
+    margin: .5rem;
+}
+
+.header__info__item i {
+    margin-right: .5rem;
 }
