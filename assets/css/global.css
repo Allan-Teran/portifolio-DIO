@@ -19,3 +19,47 @@ body {
     border: 1px solid #ffffff;
     border-radius: 1rem;
 }
+
+/* .main::before {
+    content: '';
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140vw;
+    height: 100vh;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main::before {
+    content: '';
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140vw;
+    height: 100vh;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+} */
+
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 1024px;
+        margin: 2rem auto;
+    }
+
+    .main::before{
+        width: 70vw;
+    }
+
+    .main::after {
+        width: 70vw;
+    }
+}

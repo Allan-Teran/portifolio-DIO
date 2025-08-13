@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/arcordeon.css">
+    <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/portifolio.css">
+    <link rel="stylesheet" href="./assets/css/work.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
 
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +23,7 @@
     <title>Portifolio Allan</title>
 </head>
 <body>
-    <div class="main">
+    <main class="main">
         <header class="header">
             <img src="./assets/imgs/Captura de tela 2024-11-01 192821.png" alt="Foto de Allan Teran" class="header__photo">
         
@@ -31,7 +36,110 @@
                 <p class="header__info__item"><i class="fa-regular fa-envelope" style="color: #FFD43B;"></i>allteran655@gmail.com</p>
             </div>
         </header>
-    </div>
 
+        <section class="acordeon">
+            <button class="acordeon__trigger" type="button"><h2>Idiomas</h2></button>
+
+            <div class="acordeon__content">
+                <ul class="acordeon__content__languages">
+                    <li>Português</li>
+                    <li>Inglês</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="acordeon__trigger" type="button"><h2>Portfolio</h2></button>
+
+            <div class="acordeon__content">
+                <ul class="acordeon__content__portifolio">
+                    <li>
+                        <h3 class="portifolio__title"><i class="fa-brands fa-github" style="color: #ffffff; margin-right: .5rem"></i>Pokedex com Swagger</h3>
+                        <a href="https://github.com/Allan-Teran/pokedex-DIO" target="_blank">https://github.com/Allan-Teran/pokedex-DIO</a>
+                    </li>
+                    <li>
+                        <h3 class="portifolio__title"><i class="fa-brands fa-github" style="color: #ffffff; margin-right: .5rem"></i>Projeto MyComponents</h3>
+                        <a href="https://github.com/Allan-Teran/mycomponents_Udemy" target="_blank">https://github.com/Allan-Teran/mycomponents_Udemy</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="acordeon__trigger" type="button"><h2>Experiência Profissional</h2></button>
+
+            <div class="acordeon__content">
+                <ul class="acordeon__content__experience">
+                    <li>
+                        <h3 class="experience__title"><i class="fa-solid fa-briefcase" style="color: #ffffff; margin-right: .5rem"></i>Estágio em Analise de Sistemas</h3>
+                        <p class="experience__period"><i class="fa-solid fa-calendar-xmark" style="color: #ffffff; margin-right: .25rem;"></i>Mar 2025 - Present</p>
+                        <p>Suporte no atendimento técnico aos clientes, suporte nas tarefas técnicas, acompanhamento e revisão de documentação técnica e desenvolvimento de pequenas soluções em software, além de auxiliar na criação de lojas virtuais e documentação de API.</p>
+                    </li>
+
+                    <li>
+                        <h3 class="experience__title"><i class="fa-solid fa-briefcase" style="color: #ffffff; margin-right: .5rem"></i>Projetista de TI</h3>
+                        <p class="experience__period"><i class="fa-solid fa-calendar-xmark" style="color: #ffffff; margin-right: .25rem;"></i>jun 2024 - mar 2025</p>
+                        <p>Sou responsável por fazer sites e e-commerce, além da manutenção dos mesmos mediante ao serviço que o cliente pede para a empresa na área de TI.</p>
+                    </li>
+
+                    <li>
+                        <h3 class="experience__title"><i class="fa-solid fa-briefcase" style="color: #ffffff; margin-right: .5rem"></i>Gerente Comercial</h3>
+                        <p class="experience__period"><i class="fa-solid fa-calendar-xmark" style="color: #ffffff; margin-right: .25rem;"></i>Ago 2024 - Jan 2025</p>
+                        <p>Sou responsável pela administração do setor comercial da empresa, capacitação dos membros, repasse de demandas, acompanhamento com o diretor do setor, relacionamento com o cliente e fechamento de contratos.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="acordeon__trigger" type="button"><h2>Skills</h2></button>
+
+            <div class="acordeon__content">
+
+                <div class="skills">
+                    <section class="tools">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>
+                            <img src="./assets/imgs/tech/mysql.svg" alt="simbolo do mysql" title="MySQL">
+                        </li>
+                        <li>
+                            <img src="./assets/imgs/tech/js.svg" alt="simbolo do js" title="JavaScript">
+                        </li>
+                        <li>
+                            <img src="./assets/imgs/tech/java.svg" alt="simbolo do java" title="Java">
+                        </li>
+                        <li>
+                            <img src="./assets/imgs/tech/html.svg" alt="simbolo do html" title="HTML">
+                        </li>
+                        <li>
+                            <img src="./assets/imgs/tech/css.svg" alt="simbolo do css" title="CSS">
+                        </li>
+                        <li>
+                            <img src="./assets/imgs/tech/git.svg" alt="simbolo do github" title="GitHub">
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="soft">
+                    <h3>Habilidades Pessoais:</h3>
+                    <ul>
+                        <li>Trabalho em equipe</li>
+                        <li>Proatividade</li>
+                        <li>Criatividade</li>
+                        <li>Pensamento Lógico</li>
+                        <li>Comunicação</li>
+                    </ul>
+                </section>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="./assets/js/acordeon.js"></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+
+
+.acordeon__content__portifolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.acordeon__content__portifolio li {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem 0;
+}
+
+.acordeon__content__portifolio li .portifolio__title {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.acordeon__content__portifolio li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.acordeon__content__portifolio li a:hover {
+    text-decoration: underline;
+}
+
+/* .acordeon__content__portifolio li .portifolio__title::before {
+    content: " ";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/imgs/github.svg');
+    margin-right: .5rem;
+} */

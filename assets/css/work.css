@@ -1,0 +1,19 @@
+
+
+.acordeon__content__experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.acordeon__content__experience li {
+    margin-bottom: .5rem;
+}
+
+.acordeon__content__experience li .experience__period {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
