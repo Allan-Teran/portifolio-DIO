@@ -50,12 +50,26 @@ function updatePortfolio(profileData) {
     }).join('');
 }
 
+function updateProfessionalExperience(profileData) {
+    const experience = document.getElementById('profile.professionalExperience');
+    experience.innerHTML = profileData.professionalExperience.map(job => {
+        return `
+        <li>
+            <h3 class="experience__title"><i class="fa-solid fa-briefcase" style="color: #ffffff; margin-right: .5rem"></i>${job.name}</h3>
+            <p class="experience__period"><i class="fa-solid fa-calendar-xmark" style="color: #ffffff; margin-right: .25rem;"></i>${job.period}</p>
+            <p>${job.description}</p>
+        </li>
+    `;
+    }).join('');
+}
+
 (async (params) => {
    const profileData = await fetchProfileData();
    updateProfileInfo(profileData);
    updateSoftSkills(profileData);
    updateHardSkills(profileData);
    updateLanguages(profileData);
-    updatePortfolio(profileData);
+   updatePortfolio(profileData);
+   updateProfessionalExperience(profileData);
 })()
 
