@@ -40,12 +40,14 @@ function updateLanguages(profileData) {
 
 function updatePortifolio(profileData) {
     const portifolio = document.getElementById('profile.portifolio');
-    portifolio.innerHTML = profileData.portifolio.map(project => `
+    portifolio.innerHTML = profileData.portifolio.map(project => {
+        return `
         <li>
-            <h3 class="portifolio__title"><i class="fa-brands fa-github" style="color: #ffffff; margin-right: .5rem"></i>${project.title}</h3>
-            <a href="${project.link}" target="_blank">${project.link}</a>
+            <h3 class="portifolio__title"><i class="fa-brands fa-github" style="color: #ffffff; margin-right: .5rem"></i>${project.name}</h3>
+            <a href="${project.url}" target="_blank">${project.url}</a>
         </li>
-    `).join('');
+    `;
+    }).join('');
 }
 
 (async (params) => {
