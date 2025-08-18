@@ -38,6 +38,16 @@ function updateLanguages(profileData) {
     languages.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('');
 }
 
+function updatePortifolio(profileData) {
+    const portifolio = document.getElementById('profile.portifolio');
+    portifolio.innerHTML = profileData.portifolio.map(project => `
+        <li>
+            <h3 class="portifolio__title"><i class="fa-brands fa-github" style="color: #ffffff; margin-right: .5rem"></i>${project.title}</h3>
+            <a href="${project.link}" target="_blank">${project.link}</a>
+        </li>
+    `).join('');
+}
+
 (async (params) => {
    const profileData = await fetchProfileData();
    updateProfileInfo(profileData);
