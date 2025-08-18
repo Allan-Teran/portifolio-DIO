@@ -38,9 +38,9 @@ function updateLanguages(profileData) {
     languages.innerHTML = profileData.languages.map(language => `<li>${language}</li>`).join('');
 }
 
-function updatePortifolio(profileData) {
-    const portifolio = document.getElementById('profile.portifolio');
-    portifolio.innerHTML = profileData.portifolio.map(project => {
+function updatePortfolio(profileData) {
+    const portfolio = document.getElementById('profile.portfolio');
+    portfolio.innerHTML = profileData.portfolio.map(project => {
         return `
         <li>
             <h3 class="portifolio__title"><i class="fa-brands fa-github" style="color: #ffffff; margin-right: .5rem"></i>${project.name}</h3>
