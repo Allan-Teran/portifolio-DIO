@@ -1,7 +1,29 @@
 
 
+function updateProfileInfo(profileData) {
+    const photo = document.getElementById('profile.photo');
+    photo.src = profileData.photo;
+    photo.alt = `Foto de ${profileData.name}`;
+
+    const name = document.getElementById('profile.name');
+    name.innerText = profileData.name;
+
+    const location = document.getElementById('profile.location');
+    location.innerText = profileData.location;
+
+    const job = document.getElementById('profile.job');
+    job.innerText = profileData.job;
+
+    const email = document.getElementById('profile.email');
+    email.innerText = profileData.email;
+
+    const phone = document.getElementById('profile.phone');
+    phone.innerText = profileData.phone;
+}
+
+
 (async (params) => {
    const profileData = await fetchProfileData();
-   console.log(profileData);
-})
+   updateProfileInfo(profileData);
+})()
 
